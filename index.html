@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>José Ricardo</title>
+<meta name="description" content="Site pessoal de José Ricardo, estudante de Análise e Desenvolvimento de Sistemas.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Checkbox invisível que controla o menu mobile (truque só-CSS) -->
+<input type="checkbox" id="menu-toggle" class="menu-toggle">
+
+<header class="cabecalho">
+  <a href="#inicio" class="marca">JR.</a>
+
+  <label for="menu-toggle" class="botao-menu" aria-label="Abrir menu">
+    <span></span><span></span><span></span>
+  </label>
+
+  <nav class="menu" aria-label="Navegação principal">
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#projetos">Projeto</a>
+    <a href="#habilidades">Habilidades</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="inicio" class="hero">
+    <p class="hero-eyebrow">Estudante de Análise e Desenvolvimento de Sistemas</p>
+    <h1 class="hero-titulo">
+      Olá, eu sou <span class="hero-nome">José Ricardo</span>.<br>
+      Estudante de ADS no proocesso de aprendizagem.
+    </h1>
+    <p class="hero-texto">
+      Este site foi feito para o trabalho da faculdade — uma página simples,
+      organizada e construída inteiramente com HTML e CSS puro.
+    </p>
+    <a href="#projetos" class="botao-cta">Ver projeto ↓</a>
+  </section>
+
+  <!-- SOBRE -->
+  <section id="sobre" class="secao sobre">
+    <h2 class="titulo-secao">Sobre mim</h2>
+    <div class="sobre-conteudo">
+      <p>
+        Tenho 20 anos e estou cursando Análise e Desenvolvimento de Sistemas
+        na Estácio, unidade Castanhal. Moro em Santa Isabel do Pará e este é
+        o meu primeiro site — feito para praticar HTML e CSS na prática, do
+        jeito que eu quis construir.
+      </p>
+      <ul class="sobre-fatos">
+        <li><strong>Curso:</strong> Análise e Desenvolvimento de Sistemas</li>
+        <li><strong>Instituição:</strong> Estácio — Castanhal</li>
+        <li><strong>Cidade:</strong> Santa Isabel do Pará</li>
+        <li><strong>Idade:</strong> 20 anos</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PROJETO -->
+  <section id="projetos" class="secao projetos">
+    <h2 class="titulo-secao">Projeto</h2>
+    <div class="projetos-grid">
+
+      <article class="card-projeto">
+        <div class="card-numero">01</div>
+        <h3>Este site</h3>
+        <p>Meu primeiro projeto: um site pessoal falando sobre mim, construído do zero, apenas com HTML e CSS.</p>
+        <a href="#projeto-1" class="link-projeto">Ver detalhes →</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- HABILIDADES -->
+  <section id="habilidades" class="secao habilidades">
+    <h2 class="titulo-secao">Habilidades</h2>
+    <ul class="habilidades-lista">
+      <li>Ótimo em trabalho em equipe</li>
+      <li>Boa comunicação</li>
+      <li>Aprendizado rápido</li>
+    </ul>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" class="secao contato">
+    <h2 class="titulo-secao">Contato</h2>
+    <p>Quer conversar? Me encontre por aqui:</p>
+    <div class="contato-links">
+      <a href="mailto:Ricardo.rsa02@gmail.com">Email</a>
+      <a href="https://wa.me/5591991785734" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="rodape">
+  <p>&copy; 2026 Feito pelo aluno José Ricardo. Feito com HTML e CSS.</p>
+</footer>
+
+<!-- Modal de projeto: só aparece quando é o :target da URL -->
+<div id="projeto-1" class="modal">
+  <div class="modal-caixa">
+    <a href="#projetos" class="modal-fechar" aria-label="Fechar">×</a>
+    <h3>Este site</h3>
+    <p>
+      Objetivo: criar um site pessoal simples para o trabalho da faculdade,
+      apresentando quem eu sou. Ferramentas: apenas HTML e CSS. Logo vou ta implementando no GitHub pnde meu professor irá avaliar.
+    </p>
+  </div>
+</div>
+
+</body>
+</html>
